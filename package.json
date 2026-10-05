@@ -1,0 +1,21 @@
+{
+  "name": "mcp-skills-playwright",
+  "version": "1.0.0",
+  "description": "Demo: Agent Skills driving a Playwright MCP server to test reputable websites (skills provide workflow, MCP provides tools).",
+  "main": "src/run.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/run.js",
+    "test": "node src/run.js --skill website-test --url https://www.wikipedia.org",
+    "test:links": "node src/run.js --skill link-check --url https://www.wikipedia.org",
+    "test:example": "node src/run.js --skill website-test --url https://example.com",
+    "list-skills": "node src/run.js --list",
+    "list-tools": "node scripts/list-tools.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "@playwright/mcp": "^0.0.83",
+    "yaml": "^2.8.1"
+  }
+}
