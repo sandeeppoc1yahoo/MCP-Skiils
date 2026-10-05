@@ -1,0 +1,10 @@
+node_modules/
+
+# Generated run artifacts
+reports/
+.playwright-mcp/
+
+# Logs / OS noise
+*.log
+.DS_Store
+Thumbs.db
